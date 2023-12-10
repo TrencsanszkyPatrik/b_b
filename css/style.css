@@ -21,7 +21,7 @@ body {
 }
 
 .logo {
-    max-width: 100px; 
+    width: 50px; 
     transform: translateY(-1000%);
     animation: animaciofentrol 1.2s forwards; 
 }
