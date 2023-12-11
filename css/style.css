@@ -54,6 +54,17 @@ body {
 
 .kezdoh1 {
     font-size: 60px;
+    opacity: 0; /* Kezdetben átlátszó */
+    animation: fadeIn 2s forwards; /* Animáció hozzáadása */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0; /* Átlátszó a kezdeti állapotban */
+    }
+    to {
+        opacity: 1; /* Teljesen látható a végső állapotban */
+    }
 }
 
 .cards-container {
@@ -110,7 +121,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 5px;
     color: #fff;
     border-radius: 15px;
 }
@@ -183,4 +194,36 @@ body {
 .footer-links a {
     color: #fff;
     text-decoration: none;
+}
+
+
+
+.left-cards .card {
+    animation: slideFromLeft 1.5s ease-in-out; /* Animáció az első két kártyának bal oldalról */
+}
+
+.right-cards .card {
+    animation: slideFromRight 1.5s ease-in-out; /* Animáció a maradék két kártyának jobb oldalról */
+}
+
+@keyframes slideFromLeft {
+    from {
+        transform: translateX(-100%); /* Balról jön be (-100% szélesség) */
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideFromRight {
+    from {
+        transform: translateX(100%); /* Jobbról jön be (100% szélesség) */
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
