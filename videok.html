@@ -4,13 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftj DbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
     <link rel="stylesheet" href="css/style.css">
     <script src="js/anim.js"></script>
     <link rel="icon" href="img/logo/logo.png" type="image/icon type">
+    <link rel="stylesheet" href="css/videok.css">
     <title>B&B</title>
 </head>
 
 <body onload="showFooterNav()"> <!-- Meghívja a funkciót, amivel az animációt lejátszuk -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka75k0Gln4gmtz2MlQnikT1wXgYsOg+0MhuP+IlRH9s ENB00LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
 
     <!-- Navigációs részleg -->
     <div class="navbar">
@@ -26,28 +33,50 @@
 
 
     <!-- Az oldal fő része!-->
-    <div class="main">
-        <h1 id="videokh1">Videók</h1>
-        
-        
-        <div class="alap">
-            <div >
-                <div class="videoigen">
-                    <video class="thevideo" loop preload="none">
-                        <source src="img/videokepek/1.mp4" type="video/mp4">
+    <div class="container">
+        <div class="card">
+            <div class="info">
+                <a href="video1.html">
+                    <video  class="iframe" autoplay muted loop>
+                        <source src="videok/1.mp4" type="video/mp4">
+                        A böngésződ nem támogatja a videót.
                     </video>
-                </div>
-                <div class="szoveg">
-                        Videó címe
-                </div>
+                </a>
             </div>
         </div>
 
+        <div class="card">
+            <div class="info">
+                <video  class="iframe" autoplay muted loop>
+                    <source src="videok/1.mp4" type="video/mp4">
+                    A böngésződ nem támogatja a videót.
+                </video>
+            </div>
+        </div>
 
+        <div class="card">
+            <div class="info">
+                <video  class="iframe" autoplay muted loop>
+                    <source src="videok/1.mp4" type="video/mp4">
+                    A böngésződ nem támogatja a videót.
+                </video>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="info">
+                <video  class="iframe" autoplay muted loop>
+                    <source src="videok/1.mp4" type="video/mp4">
+                    A böngésződ nem támogatja a videót.
+                </video>
+            </div>
+        </div>
     </div>
 
-    <!-- Lábléc -->
 
+
+
+    <!-- Lábléc -->
     <footer class="footer">
         <div class="footer-content">
             <p>&copy; 2023 Ball n Beat</p>
@@ -61,21 +90,5 @@
     </footer>
 
 </body>
-
-<script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-1b93190375e9ccc259df3a57c1abc0e64599724ae30d7ea4c6877eb615f89387.js"></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-
-<script id="rendered-js">
-    var figure = $(".videoigen").hover(hoverVideo, hideVideo);
-
-    function hoverVideo(e) {
-        $('video', this).get(0).play();
-    }
-
-    function hideVideo(e) {
-        $('video', this).get(0).pause();
-    }
-    //# sourceURL=pen.js
-</script>
 
 </html>
