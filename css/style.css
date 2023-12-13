@@ -11,6 +11,9 @@ body {
     color: #fff;
 }
 
+
+
+/* Navigációs menü */
 .navbar {
     background-color: rgb(69, 69, 69); 
     padding: 15px;
@@ -19,6 +22,8 @@ body {
     justify-content: space-between;
 
 }
+
+/* Logó elhelyezkedése */
 
 .logo {
     width: 50px; 
@@ -31,6 +36,8 @@ body {
         transform: translateY(0); 
     }
 }
+
+/* Gombok */
 
 .buttons {
     transform: translateY(-1000%);
@@ -49,23 +56,34 @@ body {
 }
 
 .main {
-    text-align: center;
+    padding: 15px;
+    margin-left: 20px;
 }
+
+/* Címsor */
 
 .kezdoh1 {
     font-size: 60px;
-    opacity: 0; /* Kezdetben átlátszó */
-    animation: fadeIn 2s forwards; /* Animáció hozzáadása */
+    opacity: 0; 
+    animation: megjelenH1 5s forwards;
 }
 
-@keyframes fadeIn {
+#videokh1 {
+    font-size: 60px;
+    opacity: 0;
+    animation: megjelenH1 5s forwards;
+}
+
+@keyframes megjelenH1 {
     from {
-        opacity: 0; /* Átlátszó a kezdeti állapotban */
+        opacity: 0; 
     }
     to {
-        opacity: 1; /* Teljesen látható a végső állapotban */
+        opacity: 1; 
     }
 }
+
+/*  Kártyák formázása */
 
 .cards-container {
     display: flex;
@@ -149,16 +167,19 @@ body {
     bottom: 0;
 }
 
+/* Lábléc */
+
 .footer {
     position: fixed;
-    bottom: -100px; /* Elrejtjük kezdetben a láblécet */
+    bottom: -100px; 
     left: 0;
     width: 100%;
     background-color: #333;
+    height: 30px;
     color: #fff;
     padding: 20px 0;
     text-align: center;
-    transition: bottom 1.5s ease; /* Átmenet, hogy sima legyen a mozgás */
+    transition: bottom 1.5s ease;
 }
 
 .footer-show {
@@ -197,6 +218,7 @@ body {
 }
 
 
+/* Animácik */
 
 .left-cards .card {
     animation: slideFromLeft 1.5s ease-in-out; /* Animáció az első két kártyának bal oldalról */
@@ -205,6 +227,7 @@ body {
 .right-cards .card {
     animation: slideFromRight 1.5s ease-in-out; /* Animáció a maradék két kártyának jobb oldalról */
 }
+
 
 @keyframes slideFromLeft {
     from {
@@ -227,3 +250,87 @@ body {
         opacity: 1;
     }
 }
+
+
+
+
+.alap {
+    border-radius: 15px;
+    height: 280px;
+    width: 400px;
+    background-color: #ccc;
+}
+
+
+
+.alap img:hover {
+    width: 370px;
+    transition: ease 1s;
+}
+
+.szoveg {
+    text-align: center;
+    color: #333;
+    font-size: 25px;
+    margin-top: -25px;
+}
+
+
+.videoigen{
+    background-image: url(../img/videokepek/1.avif);
+    background-size: cover;
+    height: 70%;
+    width: 80%;
+    margin-bottom: 50px;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0px 20px 20px #0000003b;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding-top: 20px;
+}
+
+.thevideo {
+    width: 360px;
+}
+
+
+
+.video .thevideo{
+    width: 100%;
+}
+
+video::-webkit-media-controls {
+    display: none !important;
+}
+
+
+/* -------------------------------------- */ 
+
+
+
+.videoalap {
+    height: 500px;
+    width: 900px;
+    background-color: #ccc;
+    border-radius: 15px;
+}
+
+.video{
+    background-size: cover;
+    width: 99%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-bottom: 50px;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0px 20px 20px #0000003b;
+    
+}
+
+
+
+
+

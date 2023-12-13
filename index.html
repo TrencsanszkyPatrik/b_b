@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="hu">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,21 +9,27 @@
     <link rel="icon" href="img/logo/logo.png" type="image/icon type">
     <title>B&B</title>
 </head>
-<body onload="showFooterNav()">
 
-        <div class="navbar">
-            <a href="index.html"><img src="img/logo/logo.png" alt="Logo" class="logo"></a>
-            <div class="buttons">
-                <a id="rolunk" href="#rolunk">Rólunk</a>
-                <button title="Ide kattintva megtalálhatod az elérhető videóinkat" class="button">Videók</button>
-                <button title="Ide kattintva megtalálhatod az elérhető zenéket" class="button">Beatek</button>
-            </div>
+<body onload="showFooterNav()"> <!-- Meghívja a funkciót, amivel az animációt lejátszuk -->
+
+    <!-- Navigációs részleg -->
+    <div class="navbar">
+        <a href="index.html"><img src="img/logo/logo.png" alt="Logo" class="logo"></a>
+        <div class="buttons">
+            <a id="rolunk" href="#rolunk">Rólunk</a>
+            <button title="Ide kattintva megtalálhatod az elérhető videóinkat" class="button"
+                onclick="megnyit('videok.html')">Videók</button>
+            <button title="Ide kattintva megtalálhatod az elérhető zenéket" class="button"
+                onclick="megnyit('beatek.html')">Beatek</button>
         </div>
+    </div>
 
+
+    <!-- Az oldal fő része!-->
     <div class="main">
         <h1 class="kezdoh1">Főoldal - avagy, hogyan kezdjünk neki?</h1>
-    
 
+        <!-- Kártyák itt találhatóak -->
         <div class="cards-container">
             <div class="cards left-cards">
                 <div class="card">
@@ -31,13 +38,14 @@
                             <img src="img/fooldal/1.png" alt="Kép 1" class="card-img">
                         </div>
                         <div class="card-back">
-                            <p>Az oldal fő témája, egy videószerkeztő. Adott felvételekre tudsz, általunk készített zenéket rakni! Érdekel? Csapjunk is bele! 
-                        </p>
+                            <p>Az oldal fő témája, egy videószerkeztő. Adott felvételekre tudsz, általunk készített
+                                zenéket rakni! Érdekel? Csapjunk is bele!
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
-            
+
             <div class="cards left-cards">
                 <div class="card">
                     <div class="card-inner">
@@ -45,7 +53,8 @@
                             <img src="img/fooldal/2.jpg" alt="Kép 1" class="card-img">
                         </div>
                         <div class="card-back">
-                            <p>Nincs is más dolgod, minthogy rányomj fent a 'Videók' menüpontra. Ott találhatod a jelenleg elérhető videóinkat! -></p>
+                            <p>Nincs is más dolgod, minthogy rányomj fent a 'Videók' menüpontra. Ott találhatod a
+                                jelenleg elérhető videóinkat! -></p>
                         </div>
                     </div>
                 </div>
@@ -58,7 +67,9 @@
                             <img src="img/fooldal/3.png" alt="Kép 1" class="card-img">
                         </div>
                         <div class="card-back">
-                            <p>Ha ezzel megvagy, nincs is más dolgod mint hogy kiválassz egy neked tetsző zenét! Amint megtaláltad a tökéletest, csak kattints rá, és elis indul az egész folyamat! A kész videódat lementi a böngésző!</p>
+                            <p>Ha ezzel megvagy, nincs is más dolgod mint hogy kiválassz egy neked tetsző zenét! Amint
+                                megtaláltad a tökéletest, csak kattints rá, és elis indul az egész folyamat! A kész
+                                videódat lementi a böngésző!</p>
                         </div>
                     </div>
                 </div>
@@ -78,26 +89,28 @@
                             </p>
                         </div>
                     </div>
-                    </div>
                 </div>
             </div>
         </div>
+    </div>
 
 
-    
+
 
     </div>
-    
+
+    <!-- Lábléc -->
+
     <footer class="footer">
         <div class="footer-content">
             <p>&copy; 2023 Ball n Beat</p>
+            <p>Az oldal, iskolai projektre készült!</p>
             <ul class="footer-links">
-                <li><a href="#">Főoldal</a></li>
-                <li><a href="#">Kapcsolat</a></li>
-                <li><a href="#">Adatvédelem</a></li>
+                <li><a href="index.html">Főoldal</a></li>
+                <li><a href="kapcsolat.html">Kapcsolat</a></li>
+                <li><a href="adatvedelem.html">Adatvédelem</a></li>
             </ul>
         </div>
     </footer>
-  
+
 </body>
-        

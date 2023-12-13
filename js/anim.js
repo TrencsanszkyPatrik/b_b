@@ -3,3 +3,6 @@ function showFooterNav() {
     footer.classList.add('footer-show');
 }
 
+function megnyit(link){
+    window.open(link, "_self")
+}
