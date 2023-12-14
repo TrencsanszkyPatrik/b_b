@@ -170,3 +170,17 @@ body {
     }
 }
 
+.hatter {
+    border-radius: 20px;
+    padding: 25px;
+    background-color: #ccc;
+    max-width: fit-content;
+}
+
+.hatter p {
+    color: #000;
+}
+
+#video {
+    border-radius: 10px;
+}
