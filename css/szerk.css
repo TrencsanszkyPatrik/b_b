@@ -1,0 +1,65 @@
+#playButton {
+    padding: 5px;
+    width: 250px;
+    margin-top: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+#playButton:hover{
+    padding: 10px;
+    cursor: pointer;
+    transition: ease 0.5s;
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.hatter {
+    border-radius: 20px;
+    padding: 25px;
+    background-color: #ccc;
+    max-width: fit-content;
+    margin-right: 500px;
+}
+
+.hatter2 {
+    border-radius: 20px;
+    padding: 25px;
+    background-color: #ccc;
+    max-width: fit-content;
+    color: #000;
+}
+
+
+.hatter p {
+    color: #000;
+}
+
+#video {
+    border-radius: 10px;
+}
+
+.zenedoboz img{
+    border-radius: 5px;
+    height: 50px;
+    width: 50px;
+}
+
+.zenedoboz {
+    width: 105%;
+    margin-top: 15px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: rgb(243, 228, 200);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.zenedoboz p {
+    padding-left: 25px;
+}

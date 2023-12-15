@@ -1,4 +1,6 @@
 
+/* Itt találhatóak a kártyák kinézete*/
+
 .cards-container {
     display: flex;
     justify-content: center;
@@ -17,6 +19,10 @@
     height: 400px;
     margin: 20px;
     perspective: 1000px;
+}
+
+.card p {
+    text-align: center;
 }
 
 .card:hover .card-inner {
@@ -77,6 +83,6 @@
     transition: bottom 0.3s ease;
 }
 
-.card:hover .card-text {
+.card:hover .card-text { /* Ha rávsiezm az egeret*/
     bottom: 0;
 }

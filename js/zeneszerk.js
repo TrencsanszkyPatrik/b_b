@@ -12,7 +12,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     playButton.addEventListener('click', function () {
         if (!isPlaying) {
-            video.muted = true;
             video.play();
             audio.play();
             isPlaying = true;
@@ -58,3 +57,11 @@ document.addEventListener("DOMContentLoaded", function () {
         isPlaying = false;
     });
 });
+
+
+function csere(zene) {
+    
+    document.getElementById("audio").setAttribute('src', zene);
+    alert('Zene sikeresen kicserélve!')
+    
+}

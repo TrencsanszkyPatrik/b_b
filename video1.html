@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/szerk.css">
     <script src="js/anim.js"></script>
     <script src="js/zeneszerk.js"></script>
     <link rel="icon" href="img/logo/logo.png" type="image/icon type">
@@ -29,7 +30,7 @@
     <!-- Az oldal fő része!-->
     <div class="main">
         <div class="hatter">
-            <video id="video" width="640" height="360" controls>
+            <video id="video" width="640" height="360">
                 <source src="videok/1.mp4" type="video/mp4">
                 A böngésződ nem támogatja a videót.
             </video>
@@ -40,8 +41,32 @@
             <p>A kiválasztott zene hangja: </p>
             <input type="range" id="audioVolume" min="0" max="1" step="0.01" value="1">
             <br>
-            <button id="playButton"  value="">Lejátszás</button>
+            <button id="playButton" value="">Lejátszás</button>
         </div>
+
+
+        <div class="hatter2">
+            <h1>Elérhető zenék:</h1>
+            <a onclick="csere('beat_prodbygyuszi/1.mp3')">
+                <div class="zenedoboz">
+                    <img src="img/fooldal/2.jpg" alt="">
+                    <p>Ez egy beef? - @prodbygyuszi</p><br>
+                </div>
+            </a>
+            <a onclick="csere('beat_prodbygyuszi/2.mp3')">
+                <div class="zenedoboz">
+                    <img src="img/fooldal/2.jpg" alt="">
+                    <p>ssssss - @prodbygyuszi</p><br>
+                </div>
+            </a>
+            <a onclick="csere('beat_prodbygyuszi/3.mp3')">
+                <div class="zenedoboz">
+                    <img src="img/fooldal/2.jpg" alt="">
+                    <p>bbbbb - @prodbygyuszi</p><br>
+                </div>
+            </a>
+        </div>
+
 
     </div>
 
