@@ -18,10 +18,10 @@
 }
 
 .card{
+    background: url("../img/videokepek/1.avif") center center/cover;
     height: 300px;
     width: 400px;
     margin: 20px;
-    background: url("../img/videokepek/1.avif") center center/cover;
     border-radius: 10px;
     overflow: hidden;
     position: relative;
@@ -29,7 +29,9 @@
     transition: 0.4s;
 }
 
-
+#card1 {
+    background: url("../img/videokepek/1.jpg") center center/cover;
+}
 
 .card h1{
     position: absolute;
