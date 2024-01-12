@@ -22,7 +22,7 @@
 .hatter {
     border-radius: 20px;
     padding: 25px;
-    background-color: #ccc;
+    background-color: #6e6e6e;
     max-width: 100%; /* Teljes szélességűre állítás */
     margin: 0 10px 20px 10px; /* Margók beállítása */
     box-sizing: border-box; /* A padding és a border ne befolyásolja a méretet */
@@ -31,14 +31,14 @@
 .hatter2 {
     border-radius: 20px;
     padding: 25px;
-    background-color: #ccc;
+    background-color: #6e6e6e;
     max-width: 100%; /* Teljes szélességűre állítás */
     color: #000;
     box-sizing: border-box; /* A padding és a border ne befolyásolja a méretet */
 }
 
 .hatter p {
-    color: #000;
+    color: #ffffff;
 }
 
 #video {
@@ -57,7 +57,7 @@
     width: 100%; /* Teljes szélességűre állítás */
     margin-top: 15px;
     border-radius: 5px;
-    background-color: rgb(243, 228, 200);
+    background-color: rgb(74, 168, 236);
     display: flex;
     align-items: center; /* Tartalom középre igazítása */
     padding: 10px; /* Kisebb padding */
@@ -67,6 +67,10 @@
 .zenedoboz p {
     padding-left: 15px; /* Kisebb padding */
     margin: 0; /* Alapértelmezett margó eltávolítása */
+}
+.zenedoboz:hover{
+    transition: 0.2s;
+    box-shadow: 0 0 30px 7px #48abe0;
 }
 
 @media only screen and (max-width: 650px) {
