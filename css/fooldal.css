@@ -1,4 +1,3 @@
-
 /* Itt találhatóak a kártyák kinézete*/
 
 .cards-container {
@@ -15,9 +14,9 @@
 
 .card {
     position: relative;
-    width: 300px;
+    width: 280px;
     height: 400px;
-    margin: 20px;
+    margin: 15px;
     perspective: 1000px;
 }
 
@@ -83,6 +82,19 @@
     transition: bottom 0.3s ease;
 }
 
-.card:hover .card-text { /* Ha rávsiezm az egeret*/
+.card:hover .card-text {
     bottom: 0;
+}
+.resz {
+    display: none;
+}
+
+/* Reszponzivitás */
+@media only screen and (max-width: 768px) {
+    .resz {
+        display: block;
+    }
+    .cards-container {
+        display: none;
+    }
 }

@@ -20,7 +20,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
 }
 
 /* Logó elhelyezkedése */
@@ -54,6 +53,7 @@ body {
     color: #000; 
     cursor: pointer;
 }
+
 
 .main {
     padding: 15px;
@@ -89,16 +89,25 @@ body {
 
 .footer {
     position: fixed;
-    bottom: -100px; 
+    bottom: auto; /* Alapértelmezett érték: ne látszódjon kezdetben */
     left: 0;
     width: 100%;
     background-color: #333;
-    height: 30px;
+    height: 50px; /* Általános magasság */
     color: #fff;
-    padding: 20px 0;
+    padding: 10px 0; /* Kisebb padding */
     text-align: center;
     transition: bottom 1.5s ease;
 }
+
+/* Reszponzív méretek */
+@media only screen and (max-width: 768px) {
+    .footer {
+        height: 70px; /* Magasabb lábléc mobil nézeten */
+        padding: 10px 0; /* Növelt padding */
+    }
+}
+
 
 .footer-show {
     bottom: 0; /* Amikor a .footer-show osztályt hozzáadjuk, megjelenik a lábléc */

@@ -7,7 +7,7 @@
     font-size: 15px;
 }
 
-#playButton:hover{
+#playButton:hover {
     padding: 10px;
     cursor: pointer;
     transition: ease 0.5s;
@@ -16,25 +16,26 @@
 .main {
     display: flex;
     flex-wrap: wrap;
+    justify-content: flex-start; /* Balra igazítás */
 }
-
 
 .hatter {
     border-radius: 20px;
     padding: 25px;
     background-color: #ccc;
-    max-width: fit-content;
-    margin-right: 500px;
+    max-width: 100%; /* Teljes szélességűre állítás */
+    margin: 0 10px 20px 10px; /* Margók beállítása */
+    box-sizing: border-box; /* A padding és a border ne befolyásolja a méretet */
 }
 
 .hatter2 {
     border-radius: 20px;
     padding: 25px;
     background-color: #ccc;
-    max-width: fit-content;
+    max-width: 100%; /* Teljes szélességűre állítás */
     color: #000;
+    box-sizing: border-box; /* A padding és a border ne befolyásolja a méretet */
 }
-
 
 .hatter p {
     color: #000;
@@ -42,24 +43,34 @@
 
 #video {
     border-radius: 10px;
+    max-width: 100%; /* Teljes szélességűre állítás */
+    height: auto; /* Arányos méret */
 }
 
-.zenedoboz img{
+.zenedoboz img {
     border-radius: 5px;
     height: 50px;
     width: 50px;
 }
 
 .zenedoboz {
-    width: 105%;
+    width: 100%; /* Teljes szélességűre állítás */
     margin-top: 15px;
-    height: 50px;
     border-radius: 5px;
     background-color: rgb(243, 228, 200);
     display: flex;
-    flex-wrap: wrap;
+    align-items: center; /* Tartalom középre igazítása */
+    padding: 10px; /* Kisebb padding */
+    box-sizing: border-box; /* A padding és a border ne befolyásolja a méretet */
 }
 
 .zenedoboz p {
-    padding-left: 25px;
+    padding-left: 15px; /* Kisebb padding */
+    margin: 0; /* Alapértelmezett margó eltávolítása */
+}
+
+@media only screen and (max-width: 650px) {
+    .main {
+        justify-content: center; /* Középre igazítás kisebb képernyőméretek esetén */
+    }
 }
