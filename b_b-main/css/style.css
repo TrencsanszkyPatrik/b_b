@@ -1,0 +1,180 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(33, 33, 33);
+    font-family: 'Gill Sans', sans-serif;
+    color: #fff;
+}
+
+#rolunk {
+    padding: 10px;
+    color: #fff;
+}
+
+
+
+/* Navigációs menü */
+.navbar {
+    background-color: rgb(69, 69, 69); 
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Logó elhelyezkedése */
+
+.logo {
+    width: 50px; 
+    transform: translateY(-1000%);
+    animation: animaciofentrol 1.2s forwards; 
+}
+
+@keyframes animaciofentrol {
+    to {
+        transform: translateY(0); 
+    }
+}
+
+/* Gombok */
+
+.buttons {
+    transform: translateY(-1000%);
+    animation: animaciofentrol 1.2s forwards; 
+    display: flex;
+}
+
+.button {
+    margin-right: 10px;
+    border: none;
+    width: 100px;
+    border-radius: 4px;
+    background-color: #ccc; 
+    color: #000; 
+    cursor: pointer;
+}
+
+
+.main {
+    padding: 15px;
+    margin-left: 20px;
+}
+
+/* Címsor */
+
+.kezdoh1 {
+    font-size: 60px;
+    opacity: 0; 
+    animation: megjelenH1 5s forwards;
+}
+
+#videokh1 {
+    font-size: 60px;
+    opacity: 0;
+    animation: megjelenH1 5s forwards;
+}
+
+@keyframes megjelenH1 {
+    from {
+        opacity: 0; 
+    }
+    to {
+        opacity: 1; 
+    }
+}
+
+
+
+/* Lábléc */
+
+.footer {
+    position: fixed;
+    bottom: auto; /* Alapértelmezett érték: ne látszódjon kezdetben */
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    height: 50px; /* Általános magasság */
+    color: #fff;
+    padding: 10px 0; /* Kisebb padding */
+    text-align: center;
+    transition: bottom 1.5s ease;
+}
+
+/* Reszponzív méretek */
+@media only screen and (max-width: 768px) {
+    .footer {
+        height: 70px; /* Magasabb lábléc mobil nézeten */
+        padding: 10px 0; /* Növelt padding */
+    }
+}
+
+
+.footer-show {
+    bottom: 0; /* Amikor a .footer-show osztályt hozzáadjuk, megjelenik a lábléc */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-content p {
+    margin: 0;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.footer-links li {
+    margin-right: 20px;
+}
+
+.footer-links li:last-child {
+    margin-right: 0;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+/* Animácik */
+
+.left-cards .card {
+    animation: slideFromLeft 1.5s ease-in-out; /* Animáció az első két kártyának bal oldalról */
+}
+
+.right-cards .card {
+    animation: slideFromRight 1.5s ease-in-out; /* Animáció a maradék két kártyának jobb oldalról */
+}
+
+
+@keyframes slideFromLeft {
+    from {
+        transform: translateX(-100%); /* Balról jön be (-100% szélesség) */
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideFromRight {
+    from {
+        transform: translateX(100%); /* Jobbról jön be (100% szélesség) */
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+

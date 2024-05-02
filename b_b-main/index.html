@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fooldal.css">
+    <script src="js/anim.js"></script>
+    <link rel="icon" href="img/logo/logo.png" type="image/icon type">
+    <title>B&B</title>
+</head>
+
+<body onload="showFooterNav()"> <!-- Meghívja a funkciót, amivel az animációt lejátszuk -->
+
+    <!-- Navigációs részleg -->
+    <div class="navbar">
+        <a href="index.html"><img src="img/logo/logo.png" alt="Logo" class="logo"></a>
+        <div class="buttons">
+            <a id="rolunk" href="rolunk.html">About</a>
+            <button title="Ide kattintva megtalálhatod az elérhető videóinkat" class="button"
+                onclick="megnyit('videok.html')">Videos</button>
+            <button title="Ide kattintva megtalálhatod az elérhető zenéket" class="button"
+                onclick="megnyit('beatek.html')">Beats</button>
+        </div>
+    </div>
+
+
+    <!-- Az oldal fő része!-->
+    <div class="main">
+        <h1 class="kezdoh1">Main page... or, how should we start?</h1>
+
+        <!-- Kártyák itt találhatóak -->
+        <div class="cards-container">
+            <div class="cards left-cards">
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="img/fooldal/1.png" alt="Kép 1" class="card-img"> <!-- Kép -->
+                        </div>
+                        <div class="card-back">
+                            <p>The page's main use is a video editor. You can put our music(s) under a given video! Interested? Then let's get into it!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cards left-cards">
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="img/fooldal/2.jpg" alt="Kép 1" class="card-img">
+                        </div>
+                        <div class="card-back">
+                            <p>
+                            You have nothing else to do, just click on the 'Videos' button on the top of the page! You find'll there videos that are available at the moment! -></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cards right-cards">
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="img/fooldal/3.png" alt="Kép 1" class="card-img">
+                        </div>
+                        <div class="card-back">
+                            <p>Once you're done with this, you just need to pick a
+                                 song you like! Once you've found the perfect one, just click on it,
+                                  and the whole process starts! Your finished video will be saved by the browser!
+                                
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cards right-cards">
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="img/fooldal/4.jpg" alt="Kép 1" class="card-img">
+                        </div>
+                        <div class="card-back">
+                            <p>
+                                If you encounter any problems or find any errors: support@ballnbeat.hu
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h1 class="resz">Asd</h1>
+    </div>
+
+
+
+
+    </div>
+
+    <!-- Lábléc -->
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2023 Ball n Beat</p>
+            <p>This page was created for a school project.</p>
+            <ul class="footer-links">
+                <li><a href="index.html">Main page</a></li>
+                <li><a href="kapcsolat.html">Contact</a></li>
+                <li><a href="adatvedelem.html">Privacy policy</a></li>
+            </ul>
+        </div>
+    </footer>
+
+</body>

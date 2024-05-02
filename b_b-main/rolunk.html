@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fooldal.css">
+    <script src="js/anim.js"></script>
+    <link rel="icon" href="img/logo/logo.png" type="image/icon type">
+    <title>B&B</title>
+</head>
+
+<body onload="showFooterNav()"> <!-- Meghívja a funkciót, amivel az animációt lejátszuk -->
+
+    <!-- Navigációs részleg -->
+    <div class="navbar">
+        <a href="index.html"><img src="img/logo/logo.png" alt="Logo" class="logo"></a>
+        <div class="buttons">
+            <a id="rolunk" href="rolunk.html"><b>About</b></a>
+            <button title="Ide kattintva megtalálhatod az elérhető videóinkat" class="button"
+                onclick="megnyit('videok.html')"><b>Videos</b></button>
+            <button title="Ide kattintva megtalálhatod az elérhető zenéket" class="button"
+                onclick="megnyit('beatek.html')"><b>Beats</b></button>
+        </div>
+    </div>
+
+
+    <!-- Az oldal fő része!-->
+    <div class="main">
+        <h1 style="font-size: 70px;">About</h1>
+        <b>
+            <p style="font-size: 2pc;">We are two middleschool students. We study at <a style="color: white; text-decoration: none;" href="https://kkszki.hu/" title="Miskolci SZC Kandó Kálmán Technikum">Miskolci SZC Kandó Kálmán Technikum</a>, and we were given the task to present something that is related to IT, and this page is the result of this project. <br>
+                Our main idea was a combination of our hobbies, basketball and music, which we came up with in this form.</p>
+        </b>
+    </div>
+
+    <!-- Lábléc -->
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2023 Ball n Beat</p>
+            <p>This page was created for a school project.</p>
+            <ul class="footer-links">
+                <li><a href="index.html">Main page</a></li>
+                <li><a href="kapcsolat.html">Contact</a></li>
+                <li><a href="adatvedelem.html">Privacy policy</a></li>
+            </ul>
+        </div>
+    </footer>
+
+</body>

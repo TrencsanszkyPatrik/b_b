@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 100%; 
+    margin: 0 auto; 
+    margin-top: 50px;
+}
+
+
+
+.container .card:hover{
+    margin-top: -15px;
+    filter: blur(0px);
+}
+
+.card{
+    background: url("../img/videokepek/1.avif") center center/cover;
+    height: 300px;
+    width: 400px;
+    margin: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 0 50px #444;
+    transition: 0.4s;
+}
+
+#card1 {
+    background: url("../img/videokepek/1.jpg") center center/cover;
+}
+
+.card h1{
+    position: absolute;
+    color: #fff;
+    font-weight: 500;
+    padding: 15px;
+    top: 310px;
+    transition: 0.8s;
+}
+
+.card:hover h1{
+    top: 500px;
+}
+
+.card .info{
+    position: absolute;
+    opacity: 0;
+    transition: 0.8s;
+    height: 500px;
+    width: 450px;
+    background: rgba(0,0,0,0.7);
+}
+
+.card:hover .info{
+    opacity: 1;
+}
+
+.card .info p{
+    padding: 10px 30px;
+    color: #fff;
+    font-weight: 400;
+}
+
+.card .info h2{
+    color: #fff;
+    font-weight: 400;
+    padding-top: 150px;
+    padding-left: 20px;
+    transition: 0.8s;
+}
+
+.card:hover .info h2{
+    padding-top: 20px;
+}
+
+.card .info a{
+    color: #3549fd;
+    font-weight: 400;
+    transition: 0.4s;
+}
+
+.card .info a:hover{
+    color: #234991;
+}
+
+.iframe{
+    width: 450px;
+    height: 300px;
+}
+
